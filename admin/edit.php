@@ -2,14 +2,14 @@
 
 require '../app/start.php';
 
-if(!empty($_POST)){
-  $id    = $_POST['id'];
-  $title = $_POST['title'];
-  $label = $_POST['label'];
-  $slug  = $_POST['slug'];
-  $body  = $_POST['body'];
+if (!empty($_POST)) {
+    $id    = $_POST['id'];
+    $title = $_POST['title'];
+    $label = $_POST['label'];
+    $slug  = $_POST['slug'];
+    $body  = $_POST['body'];
 
-  $updatePage = $db->prepare("
+    $updatePage = $db->prepare("
     UPDATE pages
     SET
         label   = :label,
@@ -20,7 +20,7 @@ if(!empty($_POST)){
     WHERE id = :id
   ");
 
-  $updatePage->execute([
+    $updatePage->execute([
   'id'    => $id,
   'title' => $title,
   'label' => $label,
@@ -28,14 +28,12 @@ if(!empty($_POST)){
   'body'  => $body,
   ]);
 
-header('Location: ' . BASE_URL . '/admin/list.php');
-
+    header('Location: ' . BASE_URL . '/admin/list.php');
 }
 
-if(!isset($_GET['id'])){
-  header('Location: ' . BASE_URL . '/admin/list.php');
-  die();
-
+if (!isset($_GET['id'])) {
+    header('Location: ' . BASE_URL . '/admin/list.php');
+    die();
 }
 
 $page = $db->prepare("
