@@ -1,0 +1,25 @@
+.footer {
+  position: absolute;
+  background-color: $color-dark-grey;
+  color: $color-dark-white;
+  width: 100%;
+  bottom: 0;
+
+  &__items {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    font-size: 1rem;
+    height: 60px;
+    align-items: center;
+  }
+
+  &__contacts {
+    display: flex;
+  }
+
+  &__contacts-item {
+    padding-left: 10px;
+  }
+}
