@@ -4,7 +4,6 @@
 @import "header";
 @import "footer";
 
-
 .map {
   display: none;
 }
@@ -43,8 +42,8 @@ main {
     padding-top: 7rem;
     padding-bottom: 6rem;
     @include tablet-up {
-      padding-top: 11rem;
-      padding-bottom: 10rem;
+      padding-top: 13rem;
+      padding-bottom: 12rem;
     }
   }
 
@@ -109,6 +108,7 @@ main {
   color: $color-dark-grey;
 }
 /*----------about section---------*/
+
 .about {
   &__wrapper {
     display: flex;
@@ -130,19 +130,20 @@ main {
   }
 
   &__name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
     padding: 1.7rem 0 1.2rem;
     color: $color-dark-grey;
   }
 
   &__text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
     color: $color-light-grey;
   }
 }
 /*----------citation section---------*/
+
 .citation {
   padding: 4rem 0;
   background: rgb(234,82,111);
@@ -153,7 +154,7 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    @include tablet-up{
+    @include tablet-up {
       justify-content: start;
       padding-left: 10rem;
     }
@@ -162,7 +163,7 @@ main {
   &__text {
     font-weight: 500;
     color: $color-dark-grey;
-    }
+  }
 
   &__img {
     display: none;
@@ -172,6 +173,61 @@ main {
       position: absolute;
       right: 3rem;
     }
+  }
+}
+/*----------gallery section---------*/
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 100%;
+    padding: 1rem;
+    @include tablet-up {
+      // width: 33.33333%;
+      width: 24.33333%;
+      max-width: 300px;
+    }
+  }
+
+  &__img {
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &:before {
+      background-color: $color-light-grey;
+      position: absolute;
+      height: 100%;
+      content: '';
+      width: 100%;
+      opacity: 0.1;
+      max-width: 300px;
+      border-radius: 2px;
+    }
+  }
+
+  &__text {
+    background-color: $color-light-grey;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    z-index: 1;
+    color: $color-dark-white;
+    font-weight: 300;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0 2px 2px;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  &__thumb {
+    border-radius: 2px;
   }
 }
 

@@ -50,16 +50,28 @@
       <h2 class="section-title">Galerija</h2>
       <div class="gallery">
         <figure class="gallery__item">
-          <img src="#" alt="suknele">
-          <figcaption class="gallery__text">Suknele</figcaption>
+          <a class="gallery__img" href="#">
+            <figcaption class="gallery__text">Suknele</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+          </a>
         </figure>
         <figure class="gallery__item">
-          <img src="#" alt="suknele">
-          <figcaption class="gallery__text">Suknele</figcaption>
+          <a class="gallery__img" href="#">
+            <figcaption class="gallery__text">Suknele</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+          </a>
         </figure>
         <figure class="gallery__item">
-          <img src="#" alt="suknele">
-          <figcaption class="gallery__text">Suknele</figcaption>
+          <a class="gallery__img" href="#">
+            <figcaption class="gallery__text">Suknele</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+          </a>
+        </figure>
+        <figure class="gallery__item">
+          <a class="gallery__img" href="#">
+            <figcaption class="gallery__text">Suknele</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+          </a>
         </figure>
       </div>
       <div class="buttons-wrapper">
