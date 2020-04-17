@@ -11,7 +11,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   /* overflow: hidden;
   display: block; */
 }
@@ -73,6 +73,11 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  &--form {
+    margin-top: 1.5rem;
+    justify-content: start;
+  }
 }
 
 .button {
@@ -94,6 +99,10 @@ main {
   &--pink {
     background-color: $color-pink;
   }
+
+  &--form {
+    margin:0;
+  }
 }
 
 .section-container {
@@ -106,9 +115,13 @@ main {
   padding-top: 4rem;
   padding-bottom: 4rem;
   color: $color-dark-grey;
-}
-/*----------about section---------*/
+  font-weight: 600;
 
+  &--light {
+    color: $color-white;
+  }
+}
+/*-----------about section-----------*/
 .about {
   &__wrapper {
     display: flex;
@@ -143,7 +156,6 @@ main {
   }
 }
 /*----------citation section---------*/
-
 .citation {
   padding: 4rem 0;
   background: rgb(234,82,111);
@@ -175,8 +187,7 @@ main {
     }
   }
 }
-/*----------gallery section---------*/
-
+/*----------gallery section----------*/
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -220,7 +231,7 @@ main {
     z-index: 1;
     color: $color-dark-white;
     font-weight: 300;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     border-radius: 0 0 2px 2px;
     text-align: left;
     font-size: 0.8rem;
@@ -228,6 +239,57 @@ main {
 
   &__thumb {
     border-radius: 2px;
+  }
+}
+/*----------contacts section---------*/
+
+.contacts {
+  background-color: $color-light-grey;
+  color: $color-dark-white;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.form {
+  padding: 1rem;
+  width: 100%;
+  @include tablet-up {
+    width: 60%;
+  }
+
+  &__field {
+    max-width: 500px;
+    padding-bottom: 1rem;
+
+    input, textarea {
+      background-color: $color-light-grey;
+      border: 1px solid $color-white;
+      border-radius: 2px;
+      width: 100%;
+      padding: 10px;
+
+      &::placeholder {
+        color: $color-placeholder-text;
+      }
+    }
+  }
+}
+
+.location {
+  padding: 1rem;
+  width: 100%;
+  @include tablet-up {
+    width: 40%;
   }
 }
 
@@ -243,14 +305,6 @@ table th {
 
 table td {
   padding: 5px;
-}
-
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #bbb;
 }
 
 label {

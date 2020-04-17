@@ -80,14 +80,14 @@
     </div>
   </section>
 
-  <section class="section-container">
+  <section class="section-container contacts">
     <div class="container">
-      <h2 class="section-title">Kontaktai</h2>
-      <div class="contacts">
+      <h2 class="section-title section-title--light">Kontaktai</h2>
+      <div class="contacts__wrapper">
         <div class="form">
-          <h3 class="form__title">Susisiekite su mumis:</h3>
+          <h3 class="contacts__title">Susisiekite su mumis:</h3>
           <form class="form__wrapper" action="#" method="post">
-            <div class="form__fields">
+            <!-- <div class="form__fields">
               <div class="form__field">
                 <input type="text" name="name" placeholder="Vardas">
               </div>
@@ -101,15 +101,24 @@
               <div class="form__field">
                 <input type="text" name="message" placeholder="Žinutė">
               </div>
+            </div> -->
+            <div class="form__field">
+              <input type="text" name="name" placeholder="Vardas">
             </div>
-            <div class="buttons-wrapper">
-              <input class="button button--orange" type="submit" value="Siųsti">
+            <div class="form__field">
+              <input type="email" name="mail" placeholder="El.paštas">
+            </div>
+            <div class="form__field">
+              <textarea name="message" rows="8" cols="80" placeholder="Žinutė"></textarea>
+            </div>
+            <div class="buttons-wrapper buttons-wrapper--form">
+              <input class="button button--orange button--form" type="submit" value="Siųsti">
             </div>
           </form>
         </div>
         <div class="location">
-          <h3 class="location__title">Kur galite mus rasti?</h3>
-          <div class="location_address">
+          <h3 class="contacts__title">Kur galite mus rasti?</h3>
+          <div class="location__address">
             <img src="#" alt="location marker">
             <p>siuvyklos adresas</p>
           </div>
