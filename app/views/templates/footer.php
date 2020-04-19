@@ -6,8 +6,8 @@
       </p>
     </div>
     <div class="footer__contacts">
-      <p class="footer__contacts-item">✉️ El. paštas</p>
-      <p class="footer__contacts-item">📞 864536772</p>
+      <p class="footer__contacts-item">✉️ <a href="mailto:asd@gmail.com">El. paštas</a></p>
+      <p class="footer__contacts-item">📞 <a href="tel:485764">864536772</a></p>
     </div>
   </div>
 </footer>

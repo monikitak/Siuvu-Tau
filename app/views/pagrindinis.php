@@ -6,7 +6,7 @@
       <p class="hero__text">Sukurkite tai, kas Jums patinka</p>
       <div class="buttons-wrapper">
         <a href="#" class="button button--orange">Susisiekite</a>
-        <a href="#" class="button button--pink">Galerija</a>
+        <a href="<?php echo BASE_URL;?>/galerija.php" class="button button--pink">Galerija</a>
       </div>
     </div>
   </section>
@@ -76,7 +76,7 @@
         </figure>
       </div>
       <div class="buttons-wrapper">
-        <a href="#" class="button button--orange">Pamatykite daugiau</a>
+        <a href="<?php echo BASE_URL;?>/galerija.php" class="button button--orange">Pamatykite daugiau</a>
       </div>
     </div>
   </section>
@@ -122,7 +122,7 @@
           <h3 class="contacts__title">Kur galite mus rasti?</h3>
           <div class="location__address">
             <img src="<?php echo BASE_URL;?>/img/map_marker.svg" alt="location marker">
-            <p>siuvyklos adresas</p>
+            <p class="location__text">Kalvarijų g. 131, Vilnius</p>
           </div>
           <div class="map">
             <iframe class="map__iframe" src="https://maps.google.com/maps?q=kalvariju%20g.%20131&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>

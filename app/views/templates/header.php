@@ -22,7 +22,7 @@
           <a href="<?php echo BASE_URL;?>" class="menu__link menu__link--active">Pradžia</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Galerija</a>
+          <a href="<?php echo BASE_URL;?>/galerija.php" class="menu__link">Galerija</a>
         </li>
         <li class="menu__item">
           <a href="<?php echo BASE_URL;?>#apie-mus" class="menu__link">Apie mus</a>
