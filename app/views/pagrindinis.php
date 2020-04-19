@@ -12,6 +12,7 @@
   </section>
 
   <section class="about section-container">
+    <span class="anchor" id="apie-mus"></span>
     <div class="container">
       <h2 class="section-title">Apie mus</h2>
       <div class="about__wrapper">
@@ -81,6 +82,7 @@
   </section>
 
   <section class="section-container contacts">
+    <span class="anchor" id="kontaktai"></span>
     <div class="container">
       <h2 class="section-title section-title--light">Kontaktai</h2>
       <div class="contacts__wrapper">
@@ -119,11 +121,11 @@
         <div class="location">
           <h3 class="contacts__title">Kur galite mus rasti?</h3>
           <div class="location__address">
-            <img src="#" alt="location marker">
+            <img src="<?php echo BASE_URL;?>/img/map_marker.svg" alt="location marker">
             <p>siuvyklos adresas</p>
           </div>
           <div class="map">
-            <iframe width="400" height="300" src="https://maps.google.com/maps?q=kalvariju%20g.%20131&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+            <iframe class="map__iframe" src="https://maps.google.com/maps?q=kalvariju%20g.%20131&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
           </div>
         </div>
       </div>
