@@ -97,17 +97,10 @@ main {
   &--orange {
     background-color: $color-orange;
   }
-  &--selected{
-    background-color: $color-orange;
-    &:hover {
-      opacity: 1;
-      transition: 0.2s;
-    }
-  }
-
   &--pink {
     background-color: $color-pink;
   }
+
   &--outline{
     background-color: transparent;
     color:$color-orange;
@@ -118,6 +111,16 @@ main {
       opacity: 1;
       transition: 0.2s;
       color: $color-white;
+    }
+  }
+  &--selected{
+    background-color: $color-orange;
+    outline: $color-orange;
+    border: 1px solid #FF8966;
+    color: $color-white;
+    &:hover {
+      opacity: 1;
+      transition: 0.2s;
     }
   }
   &--form {
@@ -232,7 +235,7 @@ main {
 
 .gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
 
   &__item {
@@ -240,7 +243,7 @@ main {
     padding: 1rem;
     @include tablet-up {
       // width: 33.33333%;
-      width: 24.33333%;
+      width: 25%;
       max-width: 300px;
     }
   }

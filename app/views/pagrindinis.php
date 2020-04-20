@@ -88,22 +88,7 @@
       <div class="contacts__wrapper">
         <div class="form">
           <h3 class="contacts__title">Susisiekite su mumis:</h3>
-          <form class="form__wrapper" action="#" method="post">
-            <!-- <div class="form__fields">
-              <div class="form__field">
-                <input type="text" name="name" placeholder="Vardas">
-              </div>
-            </div>
-            <div class="form__fields">
-              <div class="form__field">
-                <input type="text" name="mail" placeholder="El.paštas">
-              </div>
-            </div>
-            <div class="form__fields">
-              <div class="form__field">
-                <input type="text" name="message" placeholder="Žinutė">
-              </div>
-            </div> -->
+          <form class="form__wrapper" action="index.php" method="post">
             <div class="form__field">
               <input type="text" name="name" placeholder="Vardas">
             </div>
