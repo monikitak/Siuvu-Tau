@@ -42,17 +42,19 @@ main {
 .section-title {
   font-size: 2rem;
   text-transform: uppercase;
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   color: $color-dark-grey;
   font-weight: 600;
   @include tablet-up {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
- &--gallery{
-   padding-top: 4rem;
-   padding-bottom: 3rem;
- }
+
+  &--gallery {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
   &--light {
     color: $color-white;
   }
@@ -65,7 +67,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
 
-  &--gallery{
+  &--gallery {
     margin-top: 0;
   }
 
@@ -97,15 +99,17 @@ main {
   &--orange {
     background-color: $color-orange;
   }
+
   &--pink {
     background-color: $color-pink;
   }
 
-  &--outline{
+  &--outline {
     background-color: transparent;
-    color:$color-orange;
+    color: $color-orange;
     outline: $color-orange;
     border: 1px solid $color-orange;
+
     &:hover {
       background-color: $color-orange;
       opacity: 1;
@@ -113,22 +117,26 @@ main {
       color: $color-white;
     }
   }
-  &--selected{
+
+  &--selected {
     background-color: $color-orange;
     outline: $color-orange;
     border: 1px solid #FF8966;
     color: $color-white;
+
     &:hover {
       opacity: 1;
       transition: 0.2s;
     }
   }
+
   &--form {
     margin: 0;
     border: none;
   }
 }
 /*-----------hero section-----------*/
+
 .hero {
   background-image: url("/cms/img/hero_img.jpg");
   background-repeat: no-repeat;
@@ -164,7 +172,6 @@ main {
   }
 }
 /*-----------about section-----------*/
-
 .about {
   &__wrapper {
     display: flex;
@@ -199,7 +206,6 @@ main {
   }
 }
 /*----------citation section---------*/
-
 .citation {
   padding: 4rem 0;
   background: rgb(234,82,111);
@@ -232,7 +238,6 @@ main {
   }
 }
 /*----------gallery section----------*/
-
 .gallery {
   display: flex;
   justify-content: start;
@@ -287,6 +292,7 @@ main {
   }
 }
 /*----------contacts section---------*/
+
 .contacts {
   background-color: $color-light-grey;
   color: $color-dark-white;
@@ -376,11 +382,50 @@ main {
   }
 }
 /*----------------gallery page--------------------*/
-.gallery-page{
-  padding-bottom:4rem;
-}
 
+.gallery-page {
+  padding-bottom: 4rem;
+}
+/*------------------news page--------------------*/
+
+.news {
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 4rem;
+
+  &__item {
+    margin-bottom: 2rem;
+    border-radius: 2px;
+    text-align: left;
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: $color-dark-grey;
+  }
+
+  &__date {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: $color-light-grey;
+    padding: 1rem 0 0.5rem;
+  }
+
+  &__text {
+    text-align: justify;
+    color: $color-light-grey;
+    padding-bottom: 1rem;
+  }
+
+  &__link {
+    color: $color-pink;
+  }
+}
 /*---------------------------------*/
+
 table {
   width: 100%;
   table-layout: fixed;

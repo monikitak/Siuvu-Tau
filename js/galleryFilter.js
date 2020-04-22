@@ -1,28 +1,27 @@
-const listItems = document.querySelectorAll('.button');
-const allimages = document.querySelectorAll('.gallery__item');
+const galleryButtons = document.querySelectorAll('.button');
+const images = document.querySelectorAll('.gallery__item');
 
 function toggleActiveClass(buttonSelected){
-    listItems.forEach(item => {
+    galleryButtons.forEach(item => {
       item.classList.remove('button--selected');
     })
     buttonSelected.classList.add('button--selected');
 }
 
-function toggleimages(dataClass){
+function toggleImages(dataClass){
     if(dataClass === 'visi'){
-        for(let i = 0; i<allimages.length; i++){
-            allimages[i].style.display = 'block';
-            allimages[i].style.animationDelay = '2s';
+        for(let i = 0; i<images.length; i++){
+            images[i].style.display = 'block';
         }
     }else{
-        for(let i = 0; i<allimages.length; i++)
-            allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
+        for(let i = 0; i<images.length; i++)
+            images[i].dataset.class === dataClass ? images[i].style.display = 'block' : images[i].style.display = 'none';
     }
 }
 
-for(let i = 0; i < listItems.length; i++){
-    listItems[i].addEventListener('click', function(){
-        toggleActiveClass(listItems[i]);
-        toggleimages(listItems[i].dataset.class);
+for(let i = 0; i < galleryButtons.length; i++){
+    galleryButtons[i].addEventListener('click', function(){
+        toggleActiveClass(galleryButtons[i]);
+        toggleImages(galleryButtons[i].dataset.class);
     });
 }

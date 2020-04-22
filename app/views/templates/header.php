@@ -28,7 +28,7 @@
           <a href="<?php echo BASE_URL;?>#apie-mus" class="menu__link">Apie mus</a>
         </li>
         <li class="menu__item">
-          <a href="naujienos.php" class="menu__link">Naujienos</a>
+          <a href="<?php echo BASE_URL;?>/naujienos.php" class="menu__link">Naujienos</a>
         </li>
         <li class="menu__item">
           <a href="<?php echo BASE_URL;?>#kontaktai" class="menu__link">Kontaktai</a>
