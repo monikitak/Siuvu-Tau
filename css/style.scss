@@ -60,7 +60,7 @@ main {
     color: $color-white;
   }
 
-  &--admin{
+  &--admin {
     padding-bottom: 3rem;
     @include tablet-up {
       padding-bottom: 2rem;
@@ -75,23 +75,26 @@ main {
   justify-content: center;
   flex-wrap: wrap;
 
-  &--admin{
-      margin-top: 0;
-      justify-content: start;
-      padding-bottom: 0;
+  &--admin {
+    margin-top: 0;
+    justify-content: start;
+    padding-bottom: 0;
   }
 
-  &--admin-item{
-      margin-top: 0;
-      justify-content: start;
-      padding-bottom: 0;
-
-
-      @include tablet-up{
-        justify-content: center;
-        width: 30%;
-      }
+  &--admin-form {
+    margin-top: 1rem;
   }
+
+  &--admin-item {
+    margin-top: 0;
+    justify-content: start;
+    padding-bottom: 0;
+    @include tablet-up {
+      justify-content: center;
+      width: 30%;
+    }
+  }
+
   &--gallery {
     margin-top: 0;
   }
@@ -135,11 +138,12 @@ main {
     outline: $color-orange;
     border: 1px solid $color-orange;
 
-    &--grey{
+    &--grey {
       border: 1px solid $color-outline-grey;
       color: $color-outline-grey;
       outline: $color-outline-grey;
     }
+
     &:hover {
       background-color: $color-orange;
       opacity: 1;
@@ -150,9 +154,9 @@ main {
 
   &--outline-grey {
     background-color: transparent;
-      border: 1px solid $color-outline-grey;
-      color: $color-outline-grey;
-      outline: $color-outline-grey;
+    border: 1px solid $color-outline-grey;
+    color: $color-outline-grey;
+    outline: $color-outline-grey;
 
     &:hover {
       background-color: $color-outline-grey;
@@ -179,13 +183,11 @@ main {
     border: none;
   }
 
-  &--admin{
+  &--admin {
     padding: 0.4rem 1rem;
-
   }
 }
 /*-----------hero section-----------*/
-
 .hero {
   background-image: url("/cms/img/hero_img.jpg");
   background-repeat: no-repeat;
@@ -221,6 +223,7 @@ main {
   }
 }
 /*-----------about section-----------*/
+
 .about {
   &__wrapper {
     display: flex;
@@ -255,6 +258,7 @@ main {
   }
 }
 /*----------citation section---------*/
+
 .citation {
   padding: 4rem 0;
   background: rgb(234,82,111);
@@ -287,6 +291,7 @@ main {
   }
 }
 /*----------gallery section----------*/
+
 .gallery {
   display: flex;
   justify-content: start;
@@ -341,7 +346,6 @@ main {
   }
 }
 /*----------contacts section---------*/
-
 .contacts {
   background-color: $color-light-grey;
   color: $color-dark-white;
@@ -396,6 +400,31 @@ main {
       }
     }
   }
+
+  &__field--admin {
+    text-align: left;
+
+    @include tablet-up {
+      margin: auto;
+    }
+    input,
+    textarea {
+      background-color: $color-white;
+      border: 1px solid $color-light-grey;
+      padding: 10px;
+      resize: none;
+      color: $color-dark-grey;
+
+      &::placeholder {
+        color: $color-dark-grey;
+      }
+
+      &:focus {
+        border-color: $color-orange;
+        outline: none;
+      }
+    }
+  }
 }
 
 .location {
@@ -431,12 +460,10 @@ main {
   }
 }
 /*----------------gallery page--------------------*/
-
 .gallery-page {
   padding-bottom: 4rem;
 }
 /*------------------news page--------------------*/
-
 .news {
   max-width: 900px;
   margin: auto;
@@ -447,10 +474,9 @@ main {
     border-radius: 2px;
     text-align: left;
     padding: 1.5rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-
-    @include tablet-up{
-        padding: 1.5rem 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    @include tablet-up {
+      padding: 1.5rem 2rem;
     }
   }
 
@@ -477,14 +503,18 @@ main {
     color: $color-pink;
   }
 
-  &__back{
+  &__back {
     color: $color-pink;
     font-weight: 500;
-    padding: 0rem 1rem 5rem 1rem;
+    padding: 0 1rem 5rem 1rem;
+
+    &--admin{
+      color: $color-light-grey;
+      padding: 2rem 1rem 5rem 1rem;
+    }
   }
 }
 /*---------------------------------*/
-
 table {
   width: 100%;
   table-layout: fixed;

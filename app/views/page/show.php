@@ -11,7 +11,7 @@
       <div class="news">
         <div class="news__item">
           <h3 class="news__title"><?php echo e($page['title']); ?></h3>
-          <p class="news__date"><?php echo $page['created']->format('j-m-Y'); ?></p>
+          <p class="news__date"><?php echo $page['created']->format('Y-m-j'); ?></p>
           <p class="news__text"><?php echo e($page['body']); ?></p>
         </div>
       </div>
@@ -19,7 +19,15 @@
       <?php endif; ?>
 
       <p class="news__back"><a href="<?php echo BASE_URL;?>/naujienos.php">
-          < Grįžti į naujienų sąrašą</a> </p> </div> </section> </main> <?php require VIEW_ROOT . '/templates/footer.php'; ?> <!-- <div>
+          &#x276E; Grįžti į naujienų sąrašą</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<?php require VIEW_ROOT . '/templates/footer.php'; ?>
+
+<!-- <div>
             <p class="faded">
               Created on <?php echo $page['created']->format('jS M Y'); ?>
               <?php if ($page['updated']): ?>
