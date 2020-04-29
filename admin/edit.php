@@ -5,16 +5,14 @@ require '../app/start.php';
 if (!empty($_POST)) {
     $id    = $_POST['id'];
     $title = $_POST['title'];
-    $label = $_POST['label'];
-    $slug  = $_POST['slug'];
+  $link  = $_POST['link'];
     $body  = $_POST['body'];
 
     $updatePage = $db->prepare("
     UPDATE pages
     SET
-        label   = :label,
         title   = :title,
-        slug    = :slug,
+        link    = :link,
         body    = :body,
         updated = NOW()
     WHERE id = :id
@@ -23,21 +21,20 @@ if (!empty($_POST)) {
     $updatePage->execute([
   'id'    => $id,
   'title' => $title,
-  'label' => $label,
-  'slug'  => $slug,
+  'link'  => $link,
   'body'  => $body,
   ]);
 
-    header('Location: ' . BASE_URL . '/admin/list.php');
+    header('Location: ' . BASE_URL . '/admin/index.php');
 }
 
 if (!isset($_GET['id'])) {
-    header('Location: ' . BASE_URL . '/admin/list.php');
+    header('Location: ' . BASE_URL . '/admin/index.php');
     die();
 }
 
 $page = $db->prepare("
-  SELECT id, title, label, body, slug
+  SELECT id, title, body, link
   FROM pages
   WHERE id = :id
 ");

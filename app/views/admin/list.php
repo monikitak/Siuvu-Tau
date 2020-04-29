@@ -1,35 +1,61 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 <main>
-  <?php if(empty($pages)): ?>
-    <p>No pages at the moment.</p>
+  <section>
+    <div class="container">
+      <h2 class="section-title section-title--admin">Admin puslapis</h2>
 
-  <?php else: ?>
-<table>
+      <div class="buttons-wrapper buttons-wrapper--admin">
+        <a href="<?php echo BASE_URL;?>/admin/add.php" class="button button--orange">Sukurti įrašą</a>
+      </div>
+
+      <?php if(empty($pages)): ?>
+      <p>Šiuo metu nėra įrašų.</p>
+
+      <?php else: ?>
+      <div class="admin-list">
+        <?php foreach ($pages as $page): ?>
+        <div class="admin-list__item">
+          <p class="admin-list__date"><?php echo $page['created']; ?></p>
+          <a class="admin-list__title" href="<?php echo BASE_URL; ?>/page.php?page=<?php echo e($page['link']);?>"><?php echo e($page['title']); ?></a>
+          <p class="admin-list__text"><?php limitWords($page ['body'], 100); ?></p>
+          <div class="buttons-wrapper buttons-wrapper--admin-item">
+            <a class="button button--outline button--admin" href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo e($page['id']);?>">Redaguoti</a>
+            <a class="button button--outline button--outline-grey button--admin" href="<?php echo BASE_URL; ?>/admin/delete.php?id=<?php echo e($page['id']); ?>">Ištrinti</a>
+          </div>
+        </div>
+        <?php endforeach; ?>
+
+      </div>
+
+      <?php endif; ?>
+
+    </div>
+  </section>
+</main>
+
+
+<?php require VIEW_ROOT . '/templates/footer.php'; ?>
+
+
+<!-- <table>
   <thead>
     <tr>
       <th>Label</th>
       <th>Title</th>
-      <th>Slug</th>
+      <th>link</th>
       <th></th>
       <th></th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($pages as $page): ?>
-      <tr>
-        <td><?php echo e($page['label']); ?></td>
-        <td><?php echo e($page['title']); ?></td>
-        <td><a href="<?php echo BASE_URL; ?>/page.php?page=<?php echo e($page['slug']);?>"><?php echo e($page['slug']); ?></a></td>
-        <td><a href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo e($page['id']);?>">Edit</a></td>
-        <td><a href="<?php echo BASE_URL; ?>/admin/delete.php?id=<?php echo e($page['id']); ?>">Delete</a></td>
-      </tr>
+    <tr>
+      <td><?php echo e($page['label']); ?></td>
+      <td><?php echo e($page['title']); ?></td>
+      <td><a href="<?php echo BASE_URL; ?>/page.php?page=<?php echo e($page['link']);?>"><?php echo e($page['link']); ?></a></td>
+      <td><a href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo e($page['id']);?>">Edit</a></td>
+      <td><a href="<?php echo BASE_URL; ?>/admin/delete.php?id=<?php echo e($page['id']); ?>">Delete</a></td>
+    </tr>
     <?php  endforeach; ?>
   </tbody>
-</table>
-  <?php endif; ?>
-
-  <a href="<?php echo BASE_URL; ?>/admin/add.php">Add new page</a>
-</main>
-
-
-<?php require VIEW_ROOT . '/templates/footer.php'; ?>
+</table> -->

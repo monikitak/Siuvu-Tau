@@ -1,0 +1,55 @@
+.admin-list {
+  margin: auto;
+  padding: 1rem 8px 4rem;
+
+  &__item {
+    margin-bottom: 2rem;
+    border-radius: 2px;
+    text-align: left;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    display: block;
+    width: 100%;
+    @include tablet-up {
+      display: flex;
+      align-items: center;
+        padding: 1.5rem 2rem;
+    }
+  }
+
+  &__date {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: $color-light-grey;
+    padding: 0 8px 1rem 8px;
+
+    @include tablet-up {
+      width: 10%;
+      padding: 1rem;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: $color-dark-grey;
+    padding: 1rem 8px;
+    display: block;
+
+    @include tablet-up {
+      width: 30%;
+      padding: 1rem;
+    }
+  }
+
+  &__text {
+    text-align: justify;
+    color: $color-light-grey;
+    padding: 1rem 8px;
+
+    @include tablet-up {
+      width: 30%;
+      padding: 1rem;
+    }
+  }
+}

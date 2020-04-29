@@ -3,24 +3,22 @@
 require '../app/start.php';
 
 if (!empty($_POST)) {
-    $label = $_POST['label'];
     $title = $_POST['title'];
-    $slug  = $_POST['slug'];
+    $link  = $_POST['link'];
     $body  = $_POST['body'];
 
     $insertPage = $db->prepare("
-    INSERT INTO pages (label,title,slug,body,created)
-    VALUES (:label, :title, :slug, :body, NOW())
+    INSERT INTO pages (title,link,body,created)
+    VALUES ( :title, :link, :body, NOW())
   ");
 
     $insertPage->execute([
-    'label' => $label,
     'title' => $title,
-    'slug'  => $slug,
+    'link'  => $link,
     'body'  => $body,
   ]);
 
-    header('Location: ' . BASE_URL . '/admin/list.php');
+    header('Location: ' . BASE_URL . '/admin/index.php');
 }
 
 require VIEW_ROOT . '/admin/add.php';

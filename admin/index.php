@@ -3,7 +3,7 @@
   require '../app/start.php';
 
   $pages = $db->query("
-    SELECT id, label, title, slug
+    SELECT id, title, link, created, updated, body
     FROM pages
     ORDER BY created DESC
   ")->fetchAll(PDO::FETCH_ASSOC);

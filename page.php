@@ -5,16 +5,16 @@ require 'app/start.php';
 if (empty($_GET['page'])) {
     $page = false;
 } else {
-    $slug = $_GET['page'];
+    $link = $_GET['page'];
 
     $page = $db->prepare("
       SELECT *
       FROM pages
-      WHERE slug = :slug
+      WHERE link = :link
       LIMIT 1
   ");
 
-    $page->execute(['slug'=> $slug]);
+    $page->execute(['link'=> $link]);
 
     $page = $page->fetch(PDO::FETCH_ASSOC);
 

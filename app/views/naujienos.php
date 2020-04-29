@@ -13,21 +13,19 @@
 
         <?php foreach ($pages as $page): ?>
         <div class="news__item">
-          <h3 class="news__title"><?php echo $page ['title']; ?></h3>
-          <p class="news__date"><?php echo $page ['created']; ?></p>
+          <h3 class="news__title"><?php echo e($page ['title']); ?></h3>
+          <p class="news__date"><?php echo $page['created']; ?></p>
           <p class="news__text"><?php limitWords($page ['body'], 400); ?></p>
-          <a class="news__link" href="<?php echo BASE_URL; ?>/page.php?page=<?php echo $page['slug'] ;?>">Skaitykite daugiau..</a>
+          <a class="news__link" href="<?php echo BASE_URL; ?>/page.php?page=<?php echo e($page['link']) ;?>">Skaitykite daugiau..</a>
         </div>
         <?php endforeach; ?>
-
-
 
       </div>
 
       <?php endif; ?>
 
     </div>
-    <section>
+  </section>
 </main>
 
 
@@ -44,7 +42,7 @@
     <?php else: ?>
   <ul>
     <?php foreach ($pages as $page): ?>
-    <li><a href="<?php echo BASE_URL; ?>/page.php?page=<?php echo $page['slug'] ;?>"><?php echo $page ['label']; ?></a></li>
+    <li><a href="<?php echo BASE_URL; ?>/page.php?page=<?php echo $page['link'] ;?>"><?php echo $page ['label']; ?></a></li>
     <?php endforeach; ?>
   </ul>
 

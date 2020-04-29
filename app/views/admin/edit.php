@@ -7,13 +7,9 @@
       Title
       <input type="text" name="title" id="title" value="<?php echo e($page['title']); ?>">
     </label>
-    <label for="label">
-      Label
-      <input type="text" name="label" id="label" value="<?php echo e($page['label']); ?>">
-    </label>
-    <label for="slug">
-      Slug
-      <input type="text" name="slug" id="slug" value="<?php echo e($page['slug']); ?>">
+    <label for="link">
+      link
+      <input type="text" name="link" id="link" value="<?php echo e($page['link']); ?>">
     </label>
     <label for="body">
       Body

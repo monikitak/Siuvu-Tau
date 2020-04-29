@@ -7,13 +7,9 @@
       Title
       <input type="text" name="title" id="title">
     </label>
-    <label for="label">
-      Label
-      <input type="text" name="label" id="label">
-    </label>
-    <label for="slug">
-      Slug
-      <input type="text" name="slug" id="slug">
+    <label for="link">
+      link
+      <input type="text" name="link" id="link">
     </label>
     <label for="body">
       Body
