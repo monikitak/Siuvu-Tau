@@ -53,25 +53,25 @@
         <figure class="gallery__item">
           <a class="gallery__img" href="#">
             <figcaption class="gallery__text">Suknele</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_1.jpg" alt="suknele">
           </a>
         </figure>
         <figure class="gallery__item">
           <a class="gallery__img" href="#">
             <figcaption class="gallery__text">Suknele</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_2.jpg" alt="suknele">
           </a>
         </figure>
         <figure class="gallery__item">
           <a class="gallery__img" href="#">
             <figcaption class="gallery__text">Suknele</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_3.jpg" alt="suknele">
           </a>
         </figure>
         <figure class="gallery__item">
           <a class="gallery__img" href="#">
             <figcaption class="gallery__text">Suknele</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_4.jpg" alt="suknele">
           </a>
         </figure>
       </div>

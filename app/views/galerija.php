@@ -12,46 +12,64 @@
       </div>
       <div class="gallery">
         <figure class="gallery__item" data-class="sukneles">
-          <a class="gallery__img" href="#">
+          <div class="gallery__img">
             <figcaption class="gallery__text">Suknele</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
-          </a>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_1.jpg" alt="suknele">
+          </div>
         </figure>
         <figure class="gallery__item" data-class="sukneles">
-          <a class="gallery__img" href="#">
+          <div class="gallery__img">
             <figcaption class="gallery__text">Suknele</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
-          </a>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_2.jpg" alt="suknele">
+          </div>
         </figure>
         <figure class="gallery__item" data-class="kelnes">
-          <a class="gallery__img" href="#">
+          <div class="gallery__img">
             <figcaption class="gallery__text">Kelnės</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
-          </a>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_3.jpg" alt="suknele">
+          </div>
         </figure>
         <figure class="gallery__item" data-class="kostiumai">
-          <a class="gallery__img" href="#">
+          <div class="gallery__img">
             <figcaption class="gallery__text">Kostiumas</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
-          </a>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_4.jpg" alt="suknele">
+          </div>
         </figure>
         <figure class="gallery__item" data-class="kostiumai">
-          <a class="gallery__img" href="#">
+          <div class="gallery__img">
             <figcaption class="gallery__text">Kostiumas</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
-          </a>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/1_item_3_4.jpg" alt="suknele">
+          </div>
         </figure>
-        <figure class="gallery__item" data-class="kita">
-          <a class="gallery__img" href="#">
-            <figcaption class="gallery__text">Batai</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
-          </a>
+        <figure class="gallery__item" data-class="kostiumai">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Kostiumas</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/2_item_3_4.jpg" alt="suknele">
+          </div>
         </figure>
-        <figure class="gallery__item" data-class="kita">
-          <a class="gallery__img" href="#">
-            <figcaption class="gallery__text">Kuprinė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/gallery_img.jpg" alt="suknele">
-          </a>
+        <figure class="gallery__item" data-class="kostiumai">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Kostiumas</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/3_item_3_4.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="kostiumai">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Kostiumas</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/4_item_3_4.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="kostiumai">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Kostiumas</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/5_item_3_4.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="kostiumai">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Kostiumas</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/6_item_3_4.jpg" alt="suknele">
+          </div>
         </figure>
     </div>
   </section>

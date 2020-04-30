@@ -313,6 +313,7 @@ main {
     display: flex;
     justify-content: center;
 
+
     &:before {
       background-color: $color-light-grey;
       position: absolute;
@@ -343,6 +344,8 @@ main {
 
   &__thumb {
     border-radius: 2px;
+    max-width: 300px;
+    width: 100%;
   }
 }
 /*----------contacts section---------*/
