@@ -6,7 +6,7 @@ header {
 }
 
 .menu {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
   &__toggle {
     position: absolute;
@@ -16,11 +16,12 @@ header {
   }
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 10px;
     display: inline-block;
-    color: $color-dark-white;
-    font-weight: 500;
+    letter-spacing: 3px;
+    color: $color-white;
+    font-family: 'Great Vibes', cursive;
   }
 
   &__list {
@@ -43,6 +44,7 @@ header {
   }
 }
 /*---must be here-----*/
+
 .active-menu {
   display: block;
 }
@@ -58,11 +60,6 @@ header {
     &__toggle {
       display: none;
     }
-
-    .logo {
-      margin-top: 0;
-    }
-
     &__list {
       display: flex;
     }

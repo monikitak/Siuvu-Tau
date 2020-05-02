@@ -8,9 +8,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  padding-bottom: 75px;
+  padding-bottom: 355px;
   @include tablet-up {
-    padding-bottom: 60px;
+    padding-bottom: 160px;
   }
 }
 
@@ -233,7 +233,7 @@ main {
 
   &__item {
     width: 100%;
-    padding: 0 1rem 4rem;
+    padding: 0 1.5rem 4rem 1.5rem;
     @include tablet-up {
       width: 33.33333%;
     }
