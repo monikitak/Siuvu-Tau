@@ -36,6 +36,14 @@
         <li class="menu__item">
           <a href="#kontaktai" class="menu__link">Kontaktai</a>
         </li>
+        <?php if(isset($_SESSION['username'])): ?>
+        <li class="menu__item menu__item--admin">
+          <a href="<?php echo BASE_URL;?>/admin/index.php" class="menu__link menu__link--admin"><img class="menu__img menu__img--admin" src="<?php echo BASE_URL;?>/img/admin.png" alt="admin"></a>
+        </li>
+        <li class="menu__item menu__item--admin">
+          <a href="<?php echo BASE_URL;?>/admin/logout.php" class="menu__link menu__link--admin menu__link--admin-logout"><img class="menu__img menu__img--logout" src="<?php echo BASE_URL;?>/img/logout.png" alt="atsijungti"></a>
+        </li>
+        <?php endif; ?>
       </ul>
     </nav>
   </header>

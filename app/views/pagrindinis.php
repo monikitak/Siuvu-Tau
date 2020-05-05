@@ -55,8 +55,8 @@
         </figure>
         <figure class="gallery__item">
           <div class="gallery__img">
-            <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_2.jpg" alt="suknele">
+            <figcaption class="gallery__text">Paltas</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/1_coat.jpg" alt="paltas">
           </div>
         </figure>
         <figure class="gallery__item">

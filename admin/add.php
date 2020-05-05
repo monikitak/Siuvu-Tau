@@ -1,5 +1,5 @@
 <?php
-
+include('auth.php');
 require '../app/start.php';
 
 if (!empty($_POST)) {

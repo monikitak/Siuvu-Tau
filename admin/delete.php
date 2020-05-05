@@ -1,5 +1,5 @@
 <?php
-
+include('auth.php');
 require '../app/start.php';
 
 if (isset($_GET['id'])) {

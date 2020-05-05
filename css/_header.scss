@@ -28,11 +28,15 @@ header {
 
   &__list {
     display: none;
+    align-items: center;
   }
 
   &__item {
     text-align: center;
     margin: 20px auto;
+    &--admin{
+      display: inline-flex;
+    }
   }
 
   &__link {
@@ -42,6 +46,22 @@ header {
     &--active {
       color: $color-white;
       font-weight: 600;
+    }
+    &--admin{
+      display: flex;
+    }
+  }
+
+  &__img{
+    height: auto;
+    &--admin{
+    min-width: 40px;
+    width: 40px;
+    }
+    &--logout{
+      min-width: 30px;
+      padding-bottom: 4px;
+      width: 30px;
     }
   }
 }
@@ -58,7 +78,9 @@ header {
     padding-bottom: 0;
     align-items: center;
     height: 70px;
-
+    &__item--admin{
+      display: block;
+    }
     &__toggle {
       display: none;
     }
@@ -73,6 +95,12 @@ header {
       &:hover {
         color: $color-hover-white;
       }
+      &--admin-logout{
+        margin-left: 5px;
+      }
+    }
+    &__img--logout{
+          padding-bottom: 0;
     }
   }
 }
