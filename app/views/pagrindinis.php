@@ -48,28 +48,28 @@
       <h2 class="section-title">Galerija</h2>
       <div class="gallery">
         <figure class="gallery__item">
-          <a class="gallery__img" href="#">
-            <figcaption class="gallery__text">Suknele</figcaption>
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
             <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_1.jpg" alt="suknele">
-          </a>
+          </div>
         </figure>
         <figure class="gallery__item">
-          <a class="gallery__img" href="#">
-            <figcaption class="gallery__text">Suknele</figcaption>
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
             <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_2.jpg" alt="suknele">
-          </a>
+          </div>
         </figure>
         <figure class="gallery__item">
-          <a class="gallery__img" href="#">
-            <figcaption class="gallery__text">Suknele</figcaption>
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
             <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_3.jpg" alt="suknele">
-          </a>
+          </div>
         </figure>
         <figure class="gallery__item">
-          <a class="gallery__img" href="#">
-            <figcaption class="gallery__text">Suknele</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_4.jpg" alt="suknele">
-          </a>
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/2_item_3_4.jpg" alt="suknele">
+          </div>
         </figure>
       </div>
       <div class="buttons-wrapper">
@@ -85,31 +85,33 @@
       <div class="contacts__wrapper">
         <div class="form">
           <h3 class="contacts__title">Susisiekite su mumis:</h3>
-          <form class="form__wrapper" action="index.php" method="post">
+          <form class="form__wrapper" action="#kontaktai" method="post">
             <div class="form__field">
               <input type="text" name="name" placeholder="Vardas">
             </div>
             <div class="form__field">
               <input type="email" name="mail" placeholder="El.paštas" required>
+              <input type="text" id="second-name" name="second-name" />
             </div>
             <div class="form__field">
-              <textarea name="message" rows="8" cols="80" placeholder="Žinutė" required></textarea>
+              <textarea name="message" rows="8" cols="80" maxlength="2000" placeholder="Žinutė" required></textarea>
             </div>
             <div class="buttons-wrapper buttons-wrapper--form">
-              <input class="button button--orange button--form" type="submit" value="Siųsti">
+              <input class="button button--orange button--form" name="submit" type="submit" value="Siųsti">
             </div>
+            <?php if (isset($success)){ echo "<div>" . $success . "</div>";}?>
           </form>
         </div>
         <div class="location">
-          <h3 class="contacts__title">Mus galite rasti Vilniuje:</h3>
-          <div class="location__address">
-            <img src="<?php echo BASE_URL;?>/img/map_marker.svg" alt="location marker">
-            <p class="location__text">Kalvarijų g. 131, Vilnius</p>
+            <h3 class="contacts__title">Mus galite rasti Vilniuje:</h3>
+            <div class="location__address">
+              <img src="<?php echo BASE_URL;?>/img/map_marker.svg" alt="location marker">
+              <p class="location__text">P. Lukšio g. 16-417, Vilnius</p>
+            </div>
+            <div class="map">
+              <iframe class="map__iframe" src="https://maps.google.com/maps?q=P.%20Luk%C5%A1io%20g.%2016-417%2C%20Vilnius&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+            </div>
           </div>
-          <div class="map">
-            <iframe class="map__iframe" src="https://maps.google.com/maps?q=kalvariju%20g.%20131&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
-          </div>
-        </div>
       </div>
     </div>
   </section>

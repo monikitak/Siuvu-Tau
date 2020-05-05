@@ -2,7 +2,7 @@
   <div class="footer__items container">
     <div class="footer__copyright">
       <p>
-        Copyright © Siuvu Tau 2020
+       © Siuvu Tau 2020
       </p>
     </div>
     <div class="footer__contacts">
@@ -18,7 +18,7 @@
       </div>
       <div class="footer__contacts-person">
         <p class="footer__contacts-item">Jolanta Makauskienė</p>
-        <p class="footer__contacts-item">✉️ <a href="mailto:jolockalt@gmail.com">jolockalt@gmail.coms</a></p>
+        <p class="footer__contacts-item">✉️ <a href="mailto:jolockalt@gmail.com">jolockalt@gmail.com</a></p>
         <p class="footer__contacts-item">📞 <a href="tel:861143583">861143583</a></p>
       </div>
 

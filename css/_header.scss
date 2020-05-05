@@ -6,7 +6,7 @@ header {
 }
 
 .menu {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 
   &__toggle {
     position: absolute;
@@ -19,9 +19,11 @@ header {
     font-size: 2rem;
     margin-top: 10px;
     display: inline-block;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     color: $color-white;
-    font-family: 'Great Vibes', cursive;
+    @include tablet-up{
+      margin-top: 0;
+    }
   }
 
   &__list {

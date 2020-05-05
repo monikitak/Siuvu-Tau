@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Siuvimo paslaugos Jums">
+  <meta name="keywords" content="siuvimas, siuvimo paslaugos">
   <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1">
   <title>Siuvu Tau</title>
   <link rel="stylesheet" href="<?php echo BASE_URL;?>/css/style.min.css?<?php echo date('h:i:s'); ?>">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 
 </head>

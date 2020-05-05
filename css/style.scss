@@ -21,6 +21,8 @@ main {
   }
 }
 
+form #second-name{ display:none; }
+
 .anchor {
   position: absolute;
   top: -40px;
@@ -193,6 +195,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  background-position: top;
 
   &__container {
     padding-top: 7rem;
