@@ -11,71 +11,107 @@
         <button class="button button--outline" data-class="kita">Kita</button>
       </div>
       <div class="gallery">
+
         <figure class="gallery__item" data-class="sukneles">
           <div class="gallery__img">
             <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_1.jpg" alt="suknele">
-          </div>
-        </figure>
-        <figure class="gallery__item" data-class="paltai">
-          <div class="gallery__img">
-            <figcaption class="gallery__text">Paltas</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/1_coat.jpg" alt="paltas">
-          </div>
-        </figure>
-        <figure class="gallery__item" data-class="sukneles">
-          <div class="gallery__img">
-            <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_3.jpg" alt="suknele">
-          </div>
-        </figure>
-        <figure class="gallery__item" data-class="sukneles">
-          <div class="gallery__img">
-            <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/2_item_3_4.jpg" alt="suknele">
-          </div>
-        </figure>
-        <figure class="gallery__item" data-class="sukneles">
-          <div class="gallery__img">
-            <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_2.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/10_dress_small.jpg" alt="suknele">
           </div>
         </figure>
 
+        <figure class="gallery__item" data-class="paltai">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Paltas</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/1_coat_small.jpg" alt="paltas">
+          </div>
+        </figure>
         <figure class="gallery__item" data-class="svarkai">
           <div class="gallery__img">
             <figcaption class="gallery__text">Švarkas</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/1_item_3_4.jpg" alt="svarkas">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/2_jacket_small.jpg" alt="svarkas">
           </div>
         </figure>
         <figure class="gallery__item" data-class="sukneles">
           <div class="gallery__img">
             <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_4.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/15_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/16_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/11_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/3_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/12_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/13_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/9_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+
+
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/14_dress_small.jpg" alt="suknele">
+          </div>
+        </figure>
+        <figure class="gallery__item" data-class="sukneles">
+          <div class="gallery__img">
+            <figcaption class="gallery__text">Suknelė</figcaption>
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/8_dress_small.jpg" alt="suknele">
           </div>
         </figure>
         <figure class="gallery__item" data-class="svarkai">
           <div class="gallery__img">
             <figcaption class="gallery__text">Švarkas</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/3_item_3_4.jpg" alt="svarkas">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/4_jacket_small.jpg" alt="svarkas">
           </div>
         </figure>
+
         <figure class="gallery__item" data-class="kita">
           <div class="gallery__img">
             <figcaption class="gallery__text">Pagalvė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/4_item_3_4.jpg" alt="kita">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/5_pillow_small.jpg" alt="kita">
           </div>
         </figure>
         <figure class="gallery__item" data-class="svarkai">
           <div class="gallery__img">
             <figcaption class="gallery__text">Švarkas</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/5_item_3_4.jpg" alt="svarkas">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/6_jacket_small.jpg" alt="svarkas">
           </div>
         </figure>
+
         <figure class="gallery__item" data-class="kita">
           <div class="gallery__img">
             <figcaption class="gallery__text">Pagalvė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/6_item_3_4.jpg" alt="kita">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/7_pillow_small.jpg" alt="kita">
           </div>
         </figure>
     </div>

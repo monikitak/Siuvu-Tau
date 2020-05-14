@@ -191,10 +191,9 @@ form #second-name{ display:none; }
 }
 /*-----------hero section-----------*/
 .hero {
-  background-image: url("/cms/img/hero_img.jpg");
+  background: linear-gradient(90deg, rgba(1,25,54,.8), rgba(91,35,51,.9)), url("/cms/img/img_hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   background-position: top;
 
   &__container {
@@ -271,27 +270,14 @@ form #second-name{ display:none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    @include tablet-up {
-      justify-content: start;
-      padding-left: 10rem;
-    }
   }
 
   &__text {
     font-weight: 500;
+    font-size: 1.4rem;
     color: $color-dark-grey;
   }
 
-  &__img {
-    display: none;
-    @include tablet-up {
-      display: block;
-      width: 30rem;
-      position: absolute;
-      right: 3rem;
-    }
-  }
 }
 /*----------gallery section----------*/
 

@@ -1,6 +1,8 @@
 <?php require VIEW_ROOT . '/templates/mainHeader.php'; ?>
 <main>
   <section class="hero">
+
+    </div>
     <div class="hero__container container">
       <h1 class="hero__title">Siuvimo paslaugos Jums!</h1>
       <p class="hero__text">Sukurkite tai, kas Jums patinka</p>
@@ -39,7 +41,6 @@
   <section class="citation">
     <div class="container citation__wrapper">
       <p class="citation__text">“Išlaisvink žmogų, ir jis pradės kurti.” - Antuanas de Sent Egziuperi</p>
-      <img class="citation__img" src="<?php echo BASE_URL;?>/img/yarn.png" alt="paveikslelis">
     </div>
   </section>
 
@@ -50,25 +51,25 @@
         <figure class="gallery__item">
           <div class="gallery__img">
             <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_1.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/10_dress_small.jpg" alt="suknele">
           </div>
         </figure>
         <figure class="gallery__item">
           <div class="gallery__img">
             <figcaption class="gallery__text">Paltas</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/1_coat.jpg" alt="paltas">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/1_coat_small.jpg" alt="paltas">
           </div>
         </figure>
         <figure class="gallery__item">
           <div class="gallery__img">
             <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/dress_3.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/2_jacket_small.jpg" alt="suknele">
           </div>
         </figure>
         <figure class="gallery__item">
           <div class="gallery__img">
             <figcaption class="gallery__text">Suknelė</figcaption>
-            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/2_item_3_4.jpg" alt="suknele">
+            <img class="gallery__thumb" src="<?php echo BASE_URL;?>/img/15_dress_small.jpg" alt="suknele">
           </div>
         </figure>
       </div>
